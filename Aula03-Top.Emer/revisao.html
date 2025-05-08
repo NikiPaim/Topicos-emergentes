@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Interativa
+    </title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 50px;
+            transition: background 0.5s;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+        .btn-text {
+            background-color: #ff9800;
+            color: white;
+        }
+        .btn-red {
+            background-color: #e74c3c;
+            color: white;
+        }
+        .btn-blue {
+            background-color: #3498db;
+            color: white;
+        }
+        .btn-green {
+            background-color: #2ecc71;
+            color: white;
+        }
+    </style>
+</head>
+<body onload="boasVindas()">
+
+    <h1 id="titulo">🎉 Bem-vindo à Página Interativa! 🎨</h1>
+
+    <button class="btn-text" onclick="mudarTexto()">Mudar Texto ✍️</button>
+    <button class="btn-red" onclick="mudarCor('red')">Fundo Vermelho 🔴</button>
+    <button class="btn-blue" onclick="mudarCor('blue')">Fundo Azul 🔵</button>
+    <button class="btn-green" onclick="mudarCor('green')">Fundo Verde 🟢</button>
+
+    <script>
+        function boasVindas() {
+            alert("🎉 Bem-vindo à nossa página interativa!");
+        }
+
+        function mudarTexto() {
+            document.getElementById("titulo").innerHTML = "🚀 Texto Alterado! Divirta-se! 😃";
+        }
+
+        function mudarCor(cor) {
+            document.body.style.backgroundColor = cor;
+        }
+    </script>
+
+</body>
+</html>
